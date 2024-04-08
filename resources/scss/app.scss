@@ -1,1 +1,57 @@
+@use './partials/variables' as *;
 @import "~bootstrap/scss/bootstrap";
+
+
+.container{
+    background-color: white;
+  
+    nav{
+      display: flex;
+      align-items: center;
+  
+      width: 1200px;
+      height: 120px;
+      margin: 0 auto;
+  
+      img{
+        height: 80px;
+        width: auto;
+        cursor: pointer;
+      }
+  
+      ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+  
+        li{
+          list-style-type: none;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 12px;
+          cursor: pointer;
+          color: black;
+          min-height: 120px;
+          border-bottom: 3px transparent solid;
+          padding: 0 10px;
+  
+          
+    
+          &:hover{
+            color: $primaryColor;
+            border-color: $primaryColor;
+            transition: .2s ease-in-out;
+          }
+          &:not(:hover){
+            color: black;
+            border-color: transparent;
+            transition: .2s ease-in-out;
+          }
+        }
+  
+      }
+  
+  
+    }
+  
+}
