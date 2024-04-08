@@ -9,6 +9,7 @@
 <body>
 
     @include('partials/header')
+    @include('partials/comics')
 
     @yield('content')
    
