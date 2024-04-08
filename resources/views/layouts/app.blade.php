@@ -10,6 +10,7 @@
 
     @include('partials/header')
     @include('partials/comics')
+    @include('partials/findUs')
 
     @yield('content')
    
